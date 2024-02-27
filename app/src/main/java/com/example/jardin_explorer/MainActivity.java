@@ -1,4 +1,4 @@
-package com.example.sanrafa;
+package com.example.jardin_explorer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        audio=MediaPlayer.create(this,R.raw.intro);
+        audio = MediaPlayer.create(this,R.raw.intro);
         audio.start();
 
         //crear un delay de tiempo para lanzar la app
-        TimerTask inicioAPP=new TimerTask() {
+        TimerTask inicioAPP = new TimerTask() {
             @Override
             public void run() {
 
@@ -33,8 +33,18 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        Timer tiempo=new Timer();
+        Timer tiempo = new Timer();
         tiempo.schedule(inicioAPP,6000);
 
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // Detener y liberar el recurso de audio cuando la actividad esté en pausa
+        if (audio != null && audio.isPlaying()) {
+            audio.stop();
+            audio.release();
+        }
     }
 }

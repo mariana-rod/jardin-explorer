@@ -1,4 +1,4 @@
-package com.example.sanrafa;
+package com.example.jardin_explorer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,9 +13,7 @@ public class Home extends AppCompatActivity {
     //atributos para referenciar elementos gráficos
     // qué tengo en el xml que quiero controlar
 
-    Button botonHoteles;
-    Button botonRestaurantes;
-    Button botonSitios;
+    Button botonComenzar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,45 +22,18 @@ public class Home extends AppCompatActivity {
 
         //asociar las variables creadas con los ID de los elementos que vienen desde XML
 
-        botonHoteles = findViewById(R.id.botonhoteles);
-        botonRestaurantes = findViewById(R.id.botonrestaurantes);
-        botonSitios = findViewById(R.id.botonsitios);
+        botonComenzar = findViewById(R.id.btnComenzar);
 
         //escuchar eventos = dar clic en los botones
-        botonHoteles.setOnClickListener(new View.OnClickListener() {
+        botonComenzar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //acá escribo lo que quiero hacer cuando presionen el botón
-                Toast.makeText(Home.this, "hizo clic en hoteles", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Home.this, "", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(Home.this, Hoteles.class);
-                startActivity(intent);
-
-            }
-        });
-
-        botonRestaurantes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //acá escribo lo que quiero hacer cuando presionen el botón
-                Toast.makeText(Home.this, "hizo clic en restaurantes", Toast.LENGTH_SHORT).show();
-
-                Intent intent = new Intent(Home.this, Restaurantes.class);
+                Intent intent = new Intent(Home.this, Opciones.class);
                 startActivity(intent);
             }
         });
-
-        botonSitios.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //acá escribo lo que quiero hacer cuando presionen el botón
-                Toast.makeText(Home.this, "hizo clic en sitios turísticos", Toast.LENGTH_SHORT).show();
-
-                Intent intent = new Intent(Home.this, Sitios.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 }
