@@ -11,14 +11,14 @@
         android:id="@+id/textoencabezado"
         android:layout_width="380dp"
         android:layout_height="99dp"
-        android:text="Aventura con Jardín Explorer"
+        android:text=" Aventura con Jardín Explorer"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="42dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131" />
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textoencabezado"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <Button
         android:id="@+id/btnComenzar"
@@ -48,9 +48,8 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/subtexto"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.034" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Alojamiento">
 
+    <TextView
+        android:id="@+id/alojamientotitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoteles en Jardín y lugares donde alojarse"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/alojamientointro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alojamientointro"/>
+
+    <Button
+        android:id="@+id/btnVerHoteles"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/seagreen"
+        android:text="Ver hoteles"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alojamientointro"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
