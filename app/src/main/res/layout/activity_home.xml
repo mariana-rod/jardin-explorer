@@ -9,35 +9,33 @@
 
     <TextView
         android:id="@+id/textoencabezado"
-        android:layout_width="380dp"
-        android:layout_height="99dp"
-        android:text=" Aventura con Jardín Explorer"
-        android:textAlignment="center"
+        android:layout_width="362dp"
+        android:layout_height="104dp"
+        android:text="Atrévete a explorar con nosotros"
         android:textColor="@color/black"
         android:textSize="42dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/subtexto"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:text="Encuentra los mejores destinos para empaparte de cultura y diversión"
-        android:textAlignment="center"
+        android:layout_width="342dp"
+        android:layout_height="47dp"
+        android:text="Encuentra los mejores destinos para llenarte de cultura e historia"
         android:textColor="@color/slategray"
-        android:textSize="20dp"
+        android:textSize="19dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textoencabezado"
-        app:layout_constraintVertical_bias="0.026" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <Button
         android:id="@+id/btnComenzar"
@@ -50,6 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/subtexto"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.076" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

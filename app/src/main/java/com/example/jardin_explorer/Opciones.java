@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -37,10 +39,8 @@ public class Opciones extends AppCompatActivity {
 
                 Intent intent = new Intent(Opciones.this, Restaurantes.class);
                 startActivity(intent);
-
             }
         });
-
         botonAlojamiento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,6 @@ public class Opciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         botonExplorar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +61,28 @@ public class Opciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
+    //cargar el menú de opción deseado
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    //qué hago en cada opción del menú
+    public boolean onOptionsItemSelected(MenuItem item){
+        int itemSeleccionado = item.getItemId();
+
+        if(itemSeleccionado==R.id.opcion1){
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        } else if (itemSeleccionado==R.id.opcion2) {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        } else if (itemSeleccionado==R.id.opcion3) {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        } else if (itemSeleccionado==R.id.opcion4) {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        } else if (itemSeleccionado==R.id.opcion5) {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

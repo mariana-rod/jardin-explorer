@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    tools:context=".Resena">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/historiatitle"
+        android:layout_width="331dp"
+        android:layout_height="80dp"
+        android:text="Historia y cultura de Jardín, Antioquia"
+        android:textColor="@color/royalblue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/historia"
+        android:layout_width="337dp"
+        android:layout_height="187dp"
+        android:text="Jardín, en Antioquia, tiene raíces en la colonización antioqueña y la presencia de tribus indígenas. Fundado en 1863, surgió como resultado de la colonización de Concordia. La construcción de la Basílica de la Inmaculada Concepción en 1918 es emblemática. En 1979, un terremoto afectó el pueblo, pero la comunidad se recuperó. Con arquitectura colonial y republicana, Jardín es Monumento Nacional y destino turístico sostenible, conocido como la villa encantada del Suroeste Antioqueño."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historiatitle"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/historiapic"
+        android:layout_width="257dp"
+        android:layout_height="226dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/historiapic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historia"
+        app:layout_constraintVertical_bias="0.075"
+        app:shapeAppearanceOverlay="@style/radius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
