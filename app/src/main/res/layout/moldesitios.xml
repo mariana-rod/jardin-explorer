@@ -10,15 +10,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="590dp"
+        android:layout_height="572dp"
         android:background="@color/whitesmoke">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/fotomoldehotel"
+            android:id="@+id/fotomoldesitio"
             android:layout_width="353dp"
             android:layout_height="244dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/gulupaecolodge"
+            android:src="@drawable/gallito"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.615"
@@ -28,21 +28,21 @@
             app:shapeAppearanceOverlay="@style/radius" />
 
         <TextView
-            android:id="@+id/nombrehotelmolde"
+            android:id="@+id/nombresitiomolde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hotel Gulupa Ecolodge"
+            android:text="Reserva natural Jardín de Rocas"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintHorizontal_bias="0.208"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fotomoldehotel"
-            app:layout_constraintVertical_bias="0.153" />
+            app:layout_constraintTop_toBottomOf="@+id/fotomoldesitio"
+            app:layout_constraintVertical_bias="0.134" />
 
         <TextView
-            android:id="@+id/calificacionhotelmolde"
+            android:id="@+id/calificacionsitiomolde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="★★★★★"
@@ -50,66 +50,38 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintHorizontal_bias="0.094"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nombrehotelmolde"
-            app:layout_constraintVertical_bias="0.054" />
+            app:layout_constraintTop_toBottomOf="@+id/nombresitiomolde"
+            app:layout_constraintVertical_bias="0.085" />
 
         <TextView
-            android:id="@+id/preciohotelmolde"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Precios a partir de"
+            android:id="@+id/descripcionsitiomolde"
+            android:layout_width="295dp"
+            android:layout_height="70dp"
+            android:text="Un espacio para contemplar al ave Gallito de las rocas (Rupicola peruvianus) en medio de su hábitat natural."
             android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintHorizontal_bias="0.361"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/calificacionhotelmolde"
-            app:layout_constraintVertical_bias="0.06" />
-
-        <TextView
-            android:id="@+id/preciohotelmolde2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="COP 200.000"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.074"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/preciohotelmolde"
-            app:layout_constraintVertical_bias="0.116" />
-
-        <TextView
-            android:id="@+id/preciohotelmolde3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="por noche"
-            android:textSize="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/preciohotelmolde2"
-            app:layout_constraintVertical_bias="0.181" />
+            app:layout_constraintTop_toBottomOf="@+id/calificacionsitiomolde"
+            app:layout_constraintVertical_bias="0.176" />
 
         <Button
             android:id="@+id/btnVerMas"
             android:layout_width="150dp"
             android:layout_height="48dp"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginBottom="24dp"
             android:backgroundTint="@color/darkseagreen"
             android:text="Ver más"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.008"
+            app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/preciohotelmolde3"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@id/descripcionsitiomolde"
+            app:layout_constraintVertical_bias="0.515" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

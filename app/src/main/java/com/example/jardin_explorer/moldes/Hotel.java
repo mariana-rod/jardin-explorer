@@ -6,13 +6,10 @@ public class Hotel {
     private String descripcion;
     private String telefono;
     private String direccion;
-
     private Integer calificacion;
-
     private Integer fotografia;
 
     public Hotel() {
-
     }
 
     public Hotel(String nombre, String precio, String descripcion, String telefono, String direccion, Integer calificacion, Integer fotografia) {
