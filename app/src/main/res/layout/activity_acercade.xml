@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
     tools:context=".Acercade">
 
     <ImageView
@@ -21,19 +22,12 @@
 
     <TextView
         android:id="@+id/aboutme"
-        android:layout_width="357dp"
-        android:layout_height="294dp"
-        android:text="
-¡Hola! Soy Mariana 🌟, y soy de Medellín, Colombia. En este momento, estoy estudiando desarrollo de software y traducción.
-
-Me encanta sumergirme en el mundo de .NET y C#, donde mi entusiasmo por aprender realmente se potencia.
-
-(＾◡＾)っ✂
-
-Cuando tengo tiempo libre, me encanta disfrutar de la alegría de crear cosas de manera analógica; ya sea explorando el diseño, pintando, tejiendo a crochet o metiéndome de lleno en el mundo de la cerámica. Encuentro una enorme satisfacción en cada esfuerzo creativo...
-
-¿Cuál es mi misión? Quiero seguir en este viaje de aprendizaje y creación. Si compartes intereses similares o tienes experiencias para compartir, ¡vamos a conectar y explorar juntos!"
+        android:layout_width="368dp"
+        android:layout_height="360dp"
+        android:text="¡Hola! Soy 🌟 Mariana 🌟 y soy de Medellín, Colombia. En este momento, soy estudiante de Desarrollo de Software en el CESDE y de Traducción de Español-Inglés-Francés en la UdeA; donde mi entusiasmo por aprender idiomas y nuevos lenguajes de programación realmente se potencia.\n \n
+(＾◡＾)っ✂ \n \nCuando tengo tiempo libre, me encanta crear cosas de manera analógica o digital; ya sea explorando el diseño, pintando, tejiendo a crochet o metiéndome de lleno en el mundo de la cerámica. Encuentro una enorme satisfacción en cada esfuerzo creativo... \n¿Cuál es mi misión? Quiero seguir en este viaje de aprendizaje y creación. Si compartes intereses similares o tienes experiencias para compartir, ¡vamos a conectar y explorar juntos!"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.648"
@@ -42,12 +36,11 @@ Cuando tengo tiempo libre, me encanta disfrutar de la alegría de crear cosas de
         app:layout_constraintVertical_bias="0.061" />
 
     <ImageView
-        android:layout_width="296dp"
-        android:layout_height="229dp"
+        android:layout_width="235dp"
+        android:layout_height="211dp"
         android:src="@drawable/yo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aboutme"
         app:layout_constraintVertical_bias="0.0" />
