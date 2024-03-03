@@ -8,11 +8,12 @@ public class Restaurante {
     private String direccion;
     private Integer calificacion;
     private Integer fotografia;
+    private Integer boton;
 
     public Restaurante() {
     }
 
-    public Restaurante(String nombre, String precio, String descripcion, String telefono, String direccion, Integer calificacion, Integer fotografia) {
+    public Restaurante(String nombre, String precio, String descripcion, String telefono, String direccion, Integer calificacion, Integer fotografia, Integer boton) {
         this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
@@ -20,6 +21,7 @@ public class Restaurante {
         this.direccion = direccion;
         this.calificacion = calificacion;
         this.fotografia = fotografia;
+        this.boton = boton;
     }
 
     public String getNombre() {
@@ -77,4 +79,14 @@ public class Restaurante {
     public void setFotografia(Integer fotografia) {
         this.fotografia = fotografia;
     }
+
+    public Integer getBoton() {
+        return boton;
+    }
+
+    public void setBoton(Integer boton) {
+        this.boton = boton;
+    }
 }
+
+

@@ -1,16 +1,71 @@
 package com.example.jardin_explorer.adaptadores;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
-import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jardin_explorer.R;
+import com.example.jardin_explorer.moldes.Restaurante;
+import com.google.android.material.imageview.ShapeableImageView;
 
-public class RestauranteAdaptador extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class RestauranteAdaptador extends RecyclerView.Adapter<RestauranteAdaptador.viewHolder> {
+
+    public ArrayList<Restaurante> listaRestaurantes;
+
+    public RestauranteAdaptador() {
+    }
+
+    public RestauranteAdaptador(ArrayList<Restaurante> listaRestaurantes) {
+        this.listaRestaurantes = listaRestaurantes;
+    }
+
+    @NonNull
+    @Override
+    public RestauranteAdaptador.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.molderestaurante, null, false);
+        return new viewHolder(vista);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurante_adaptador);
+    public void onBindViewHolder(@NonNull RestauranteAdaptador.viewHolder holder, int position) {
+        holder.pintarMolde(listaRestaurantes.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return listaRestaurantes.size();
+    }
+
+    public class viewHolder extends RecyclerView.ViewHolder {
+
+        ShapeableImageView fotomolderestaurante;
+        TextView nombrerestaurantemolde;
+        TextView calificacionrestaurantemolde;
+        TextView descripcionrestaurantemolde;
+        Button btnVerMas;
+
+        public viewHolder(@NonNull View itemView) {
+            super(itemView);
+            fotomolderestaurante = itemView.findViewById(R.id.fotomoldehotel);
+            nombrerestaurantemolde = itemView.findViewById(R.id.nombrerestaurantemolde);
+            calificacionrestaurantemolde = itemView.findViewById(R.id.calificacionrestaurantemolde);
+            descripcionrestaurantemolde = itemView.findViewById(R.id.descripcionrestaurantemolde);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas);
+        }
+
+        public void pintarMolde(Restaurante restaurante) {
+            fotomolderestaurante.setImageResource(restaurante.getFotografia());
+            nombrerestaurantemolde.setText(restaurante.getNombre());
+            calificacionrestaurantemolde.setText(restaurante.getCalificacion());
+            descripcionrestaurantemolde.setText(restaurante.getDescripcion());
+            btnVerMas.setBottom(restaurante.getBoton());
+        }
     }
 }

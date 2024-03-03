@@ -5,15 +5,17 @@ public class Sitio {
     private String descripcion;
     private String direccion;
     private Integer fotografia;
+    private Integer boton;
 
     public Sitio() {
     }
 
-    public Sitio(String nombre, String descripcion, String direccion, Integer fotografia) {
+    public Sitio(String nombre, String descripcion, String direccion, Integer fotografia, Integer boton) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.direccion = direccion;
         this.fotografia = fotografia;
+        this.boton = boton;
     }
 
     public String getNombre() {
@@ -46,5 +48,13 @@ public class Sitio {
 
     public void setFotografia(Integer fotografia) {
         this.fotografia = fotografia;
+    }
+
+    public Integer getBoton() {
+        return boton;
+    }
+
+    public void setBoton(Integer boton) {
+        this.boton = boton;
     }
 }
