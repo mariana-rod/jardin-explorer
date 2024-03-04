@@ -2,22 +2,18 @@ package com.example.jardin_explorer.moldes;
 
 public class Restaurante {
     private String nombre;
-    private String precio;
     private String descripcion;
-    private String telefono;
     private String direccion;
-    private Integer calificacion;
+    private String calificacion;
     private Integer fotografia;
     private Integer boton;
 
     public Restaurante() {
     }
 
-    public Restaurante(String nombre, String precio, String descripcion, String telefono, String direccion, Integer calificacion, Integer fotografia, Integer boton) {
+    public Restaurante(String nombre, String descripcion, String direccion, String calificacion, Integer fotografia, Integer boton) {
         this.nombre = nombre;
-        this.precio = precio;
         this.descripcion = descripcion;
-        this.telefono = telefono;
         this.direccion = direccion;
         this.calificacion = calificacion;
         this.fotografia = fotografia;
@@ -32,28 +28,12 @@ public class Restaurante {
         this.nombre = nombre;
     }
 
-    public String getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
-
     public String getDescripcion() {
         return descripcion;
     }
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     public String getDireccion() {
@@ -64,11 +44,11 @@ public class Restaurante {
         this.direccion = direccion;
     }
 
-    public Integer getCalificacion() {
+    public String getCalificacion() {
         return calificacion;
     }
 
-    public void setCalificacion(Integer calificacion) {
+    public void setCalificacion(String calificacion) {
         this.calificacion = calificacion;
     }
 

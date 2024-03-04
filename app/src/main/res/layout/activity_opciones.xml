@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.1"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/seagreen"
-        android:text="Alojamiento"
+        android:text="Alojamientos"
         android:textColor="@color/white"/>
 
 
