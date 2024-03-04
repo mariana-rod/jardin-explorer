@@ -29,8 +29,7 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
 
     //constructor lleno
 
-    public HotelAdaptador(ArrayList<Hotel> listaHoteles) {
-        this.listaHoteles = listaHoteles;
+    public HotelAdaptador(ArrayList<Hotel> listaHoteles) {this.listaHoteles = listaHoteles;
     }
 
     @NonNull
@@ -69,9 +68,7 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
             nombrehotelmolde = itemView.findViewById(R.id.nombrehotelmolde);
             calificacionhotelmolde = itemView.findViewById(R.id.calificacionhotelmolde);
             preciohotelmolde = itemView.findViewById(R.id.preciohotelmolde);
-            preciohotelmolde2 = itemView.findViewById(R.id.preciohotelmolde2);
-            preciohotelmolde3 = itemView.findViewById(R.id.preciohotelmolde3);
-            btnVerMas = itemView.findViewById(R.id.btnVerMas);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas1);
         }
 
         public void pintarMolde(Hotel hotel) {
@@ -79,8 +76,6 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
             nombrehotelmolde.setText(hotel.getNombre());
             calificacionhotelmolde.setText(hotel.getCalificacion());
             preciohotelmolde.setText(hotel.getPrecio());
-            preciohotelmolde2.setText(hotel.getPrecio2());
-            preciohotelmolde3.setText(hotel.getPrecio3());
             btnVerMas.setBottom(hotel.getBoton());
         }
     }

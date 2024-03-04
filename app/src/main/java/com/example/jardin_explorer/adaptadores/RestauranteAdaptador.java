@@ -57,7 +57,7 @@ public class RestauranteAdaptador extends RecyclerView.Adapter<RestauranteAdapta
             nombrerestaurantemolde = itemView.findViewById(R.id.nombrerestaurantemolde);
             calificacionrestaurantemolde = itemView.findViewById(R.id.calificacionrestaurantemolde);
             descripcionrestaurantemolde = itemView.findViewById(R.id.descripcionrestaurantemolde);
-            btnVerMas = itemView.findViewById(R.id.btnVerMas);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas2);
         }
 
         public void pintarMolde(Restaurante restaurante) {

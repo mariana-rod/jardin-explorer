@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="590dp"
+        android:layout_height="546dp"
         android:background="@color/whitesmoke">
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -59,7 +59,7 @@
             android:id="@+id/preciohotelmolde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Precios a partir de"
+            android:text="Precios a partir de\n COP 200.000\n por noche"
             android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,35 +68,8 @@
             app:layout_constraintTop_toBottomOf="@+id/calificacionhotelmolde"
             app:layout_constraintVertical_bias="0.06" />
 
-        <TextView
-            android:id="@+id/preciohotelmolde2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="COP 200.000"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.074"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/preciohotelmolde"
-            app:layout_constraintVertical_bias="0.116" />
-
-        <TextView
-            android:id="@+id/preciohotelmolde3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="por noche"
-            android:textSize="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/preciohotelmolde2"
-            app:layout_constraintVertical_bias="0.181" />
-
         <Button
-            android:id="@+id/btnVerMas"
+            android:id="@+id/btnVerMas1"
             android:layout_width="150dp"
             android:layout_height="48dp"
             android:layout_marginHorizontal="20dp"
@@ -106,10 +79,10 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.008"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/preciohotelmolde3"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@id/preciohotelmolde"
+            app:layout_constraintVertical_bias="0.562"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

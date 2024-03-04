@@ -56,7 +56,7 @@ public class SitiosAdaptador extends RecyclerView.Adapter<SitiosAdaptador.viewHo
             fotomoldesitio = itemView.findViewById(R.id.fotomoldehotel);
             nombresitiomolde = itemView.findViewById(R.id.nombresitiomolde);
             descripcionsitiomolde = itemView.findViewById(R.id.descripcionsitiomolde);
-            btnVerMas = itemView.findViewById(R.id.btnVerMas);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas3);
         }
 
         public void pintarMolde(Sitio sitio) {

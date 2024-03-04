@@ -3,17 +3,17 @@ package com.example.jardin_explorer.moldes;
 public class Sitio {
     private String nombre;
     private String descripcion;
-    private String direccion;
+    private String telefono;
     private Integer fotografia;
     private Integer boton;
 
     public Sitio() {
     }
 
-    public Sitio(String nombre, String descripcion, String direccion, Integer fotografia, Integer boton) {
+    public Sitio(String nombre, String descripcion, String telefono, Integer fotografia, Integer boton) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.direccion = direccion;
+        this.telefono = telefono;
         this.fotografia = fotografia;
         this.boton = boton;
     }
@@ -34,12 +34,12 @@ public class Sitio {
         this.descripcion = descripcion;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public Integer getFotografia() {

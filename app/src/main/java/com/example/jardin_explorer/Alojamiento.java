@@ -25,5 +25,4 @@ public class Alojamiento extends AppCompatActivity {
             }
         });
     }
-
 }

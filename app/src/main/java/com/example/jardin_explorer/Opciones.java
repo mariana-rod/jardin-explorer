@@ -15,9 +15,9 @@ public class Opciones extends AppCompatActivity {
     //atributos para referenciar elementos gráficos
     // qué tengo en el xml que quiero controlar
 
+    Button botonExplorar;
     Button botonRestaurantes;
     Button botonAlojamiento;
-    Button botonExplorar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +26,21 @@ public class Opciones extends AppCompatActivity {
 
         //asociar las variables creadas con los ID de los elementos que vienen desde XML
 
+        botonExplorar = findViewById(R.id.btnExplorar);
         botonRestaurantes = findViewById(R.id.btnRestaurantes);
         botonAlojamiento = findViewById(R.id.btnAlojamiento);
-        botonExplorar = findViewById(R.id.btnExplorar);
 
         //escuchar eventos = dar clic en los botones
+        botonExplorar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //acá escribo lo que quiero hacer cuando presionen el botón
+                Toast.makeText(Opciones.this, "", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(Opciones.this, Explorar.class);
+                startActivity(intent);
+            }
+        });
         botonRestaurantes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,16 +61,7 @@ public class Opciones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        botonExplorar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //acá escribo lo que quiero hacer cuando presionen el botón
-                Toast.makeText(Opciones.this, "", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(Opciones.this, Explorar.class);
-                startActivity(intent);
-            }
-        });
     }
     //cargar el menú de opción deseado
     public boolean onCreateOptionsMenu(Menu menu){

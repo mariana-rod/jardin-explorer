@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/opcion1"
-        android:title="@string/menu_1"/>
+        android:title="Inglés"/>
     <item
         android:id="@+id/opcion2"
         android:title="@string/menu_2"/>
@@ -15,6 +15,5 @@
     <item
         android:id="@+id/opcion5"
         android:title="@string/menu_5"/>
-
 
 </menu>
