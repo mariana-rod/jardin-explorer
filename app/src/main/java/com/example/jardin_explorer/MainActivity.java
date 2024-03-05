@@ -37,14 +37,14 @@ public class MainActivity extends AppCompatActivity {
         tiempo.schedule(inicioAPP,6000);
 
     }
-    //@Override
-    //protected void onPause() {
-        //super.onPause();
+    @Override
+    protected void onPause() {
+        super.onPause();
 
         // Detener y liberar el recurso de audio cuando la actividad esté en pausa
-        //if (audio != null && audio.isPlaying()) {
-            //audio.stop();
-            //audio.release();
-        //}
-   //}
+        if (audio != null && audio.isPlaying()) {
+            audio.stop();
+            audio.release();
+        }
+    }
 }

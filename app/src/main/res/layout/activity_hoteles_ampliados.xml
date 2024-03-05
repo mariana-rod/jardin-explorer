@@ -8,7 +8,7 @@
     tools:context=".HotelesAmpliados">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/fotohotelampliando"
+        android:id="@+id/fotomoldehotel"
         android:layout_width="353dp"
         android:layout_height="244dp"
         android:adjustViewBounds="true"
@@ -22,7 +22,7 @@
         app:shapeAppearanceOverlay="@style/radius" />
 
     <TextView
-        android:id="@+id/nombrehotelampliando"
+        android:id="@+id/nombrehotelmolde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hotel Gulupa Ecolodge"
@@ -32,11 +32,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotohotelampliando"
+        app:layout_constraintTop_toBottomOf="@+id/fotomoldehotel"
         app:layout_constraintVertical_bias="0.071" />
 
     <TextView
-        android:id="@+id/calificacionhotelampliando"
+        android:id="@+id/calificacionhotelmolde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="★★★★★"
@@ -46,11 +46,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrehotelampliando"
+        app:layout_constraintTop_toBottomOf="@+id/nombrehotelmolde"
         app:layout_constraintVertical_bias="0.054" />
 
     <TextView
-        android:id="@+id/descripcionhotelampliando"
+        android:id="@+id/descripcionhotelmolde"
         android:layout_width="354dp"
         android:layout_height="83dp"
         android:text="Un refugio ecológico en Jardín con estacionamiento vigilado, internet gratuito, bañera de hidromasaje, cafetería, alquiler de bicicletas y servicio de masajes, aceptando mascotas."
@@ -59,11 +59,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calificacionhotelampliando"
+        app:layout_constraintTop_toBottomOf="@+id/calificacionhotelmolde"
         app:layout_constraintVertical_bias="0.086" />
 
     <TextView
-        android:id="@+id/preciohotelampliando"
+        android:id="@+id/preciohotelmolde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Precios a partir de\nCOP 200.000\npor noche"
@@ -72,11 +72,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelampliando"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelmolde"
         app:layout_constraintVertical_bias="0.137" />
 
     <TextView
-        android:id="@+id/numerohotelampliando"
+        android:id="@+id/numerohotelmolde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Teléfono: 2312275"
@@ -84,12 +84,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toEndOf="@+id/preciohotelampliando"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelampliando"
+        app:layout_constraintStart_toEndOf="@+id/preciohotelmolde"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionhotelmolde"
         app:layout_constraintVertical_bias="0.111" />
 
     <TextView
-        android:id="@+id/direccionhotelampliando"
+        android:id="@+id/direccionhotelmolde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dir: Vereda La Selva,\nJardín 056057"
@@ -97,8 +97,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toEndOf="@+id/preciohotelampliando"
-        app:layout_constraintTop_toBottomOf="@+id/numerohotelampliando"
+        app:layout_constraintStart_toEndOf="@+id/preciohotelmolde"
+        app:layout_constraintTop_toBottomOf="@+id/numerohotelmolde"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -114,7 +114,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preciohotelampliando"
+        app:layout_constraintTop_toBottomOf="@id/preciohotelmolde"
         app:layout_constraintVertical_bias="0.566" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

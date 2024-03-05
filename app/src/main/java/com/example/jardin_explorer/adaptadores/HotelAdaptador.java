@@ -83,12 +83,12 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
 
             //escuchar click en cada uno de los elementos de la lista
 
-            itemView.setOnClickListener(new View.OnClickListener() {
+            btnVerMas.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(btnVerMas.getContext(), HotelesAmpliados.class);
                     intent.putExtra("datoshotel", hotel);
-                    itemView.getContext().startActivity(intent);
+                    btnVerMas.getContext().startActivity(intent);
                 }
             });
         }
