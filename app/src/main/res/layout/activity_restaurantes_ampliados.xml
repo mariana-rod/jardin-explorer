@@ -7,7 +7,7 @@
     tools:context=".RestaurantesAmpliados">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/fotomolderestaurante"
+        android:id="@+id/fotorestauranteampliando"
         android:layout_width="353dp"
         android:layout_height="244dp"
         android:adjustViewBounds="true"
@@ -21,7 +21,7 @@
         app:shapeAppearanceOverlay="@style/radius" />
 
     <TextView
-        android:id="@+id/nombrerestaurantemolde"
+        android:id="@+id/nombrerestauranteampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bon Appétit"
@@ -31,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotomolderestaurante"
+        app:layout_constraintTop_toBottomOf="@+id/fotorestauranteampliando"
         app:layout_constraintVertical_bias="0.071" />
 
     <TextView
-        android:id="@+id/calificacionrestaurantemolde"
+        android:id="@+id/calificacionrestauranteampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="★★★★★"
@@ -45,11 +45,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrerestaurantemolde"
+        app:layout_constraintTop_toBottomOf="@+id/nombrerestauranteampliando"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/descripcionrestaurantemolde"
+        android:id="@+id/descripcionrestauranteampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurante, pizzería, parrilla"
@@ -58,11 +58,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calificacionrestaurantemolde"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintTop_toBottomOf="@+id/calificacionrestauranteampliando"
+        app:layout_constraintVertical_bias="0.047" />
 
     <TextView
-        android:id="@+id/direccionrestaurantemolde"
+        android:id="@+id/direccionrestauranteampliando"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dirección: Vereda La Selva, Jardín 056057"
@@ -71,8 +71,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcionrestaurantemolde"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintTop_toBottomOf="@+id/descripcionrestauranteampliando"
+        app:layout_constraintVertical_bias="0.057" />
 
     <Button
         android:id="@+id/btnVerMas2"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/direccionrestaurantemolde"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toBottomOf="@id/direccionrestauranteampliando"
+        app:layout_constraintVertical_bias="0.154" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

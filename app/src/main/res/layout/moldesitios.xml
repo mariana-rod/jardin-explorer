@@ -13,7 +13,7 @@
         android:layout_height="572dp"
         android:background="@color/whitesmoke">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:id="@+id/fotomoldesitio"
             android:layout_width="353dp"
             android:layout_height="244dp"

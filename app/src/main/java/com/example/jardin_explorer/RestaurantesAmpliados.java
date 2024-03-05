@@ -17,6 +17,6 @@ public class RestaurantesAmpliados extends AppCompatActivity {
         setContentView(R.layout.activity_restaurantes_ampliados);
 
         datosrestaurante=(Restaurantes) getIntent().getSerializableExtra("datosrestaurante");
-        Toast.makeText(this, datosrestaurante.getNombre(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, datosrestaurante.getNombre(), Toast.LENGTH_SHORT).show();
     }
 }
