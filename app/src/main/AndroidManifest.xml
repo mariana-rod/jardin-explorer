@@ -22,37 +22,10 @@
             android:name=".HotelesAmpliados"
             android:exported="false" />
         <activity
-            android:name=".listaRestaurantes"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".lista_restaure"
-            android:exported="false" />
-        <activity
-            android:name=".lista_sitios"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".Acercade"
             android:exported="false" />
         <activity
             android:name=".Resena"
-            android:exported="false" />
-        <activity
-            android:name=".moldes.Sitio"
-            android:exported="false" />
-        <activity
-            android:name=".moldes.Restaurante"
             android:exported="false" />
         <activity
             android:name=".adaptadores.SitiosAdaptador"
@@ -64,8 +37,20 @@
             android:name=".adaptadores.HotelAdaptador"
             android:exported="false" />
         <activity
+            android:name=".moldes.Sitio"
+            android:exported="false" />
+        <activity
+            android:name=".moldes.Restaurante"
+            android:exported="false" />
+        <activity
             android:name=".moldes.Hotel"
             android:exported="false" />
+        <activity
+            android:name=".listaSitios"
+            android:exported="false"/>
+        <activity
+            android:name=".listaRestaurantes"
+            android:exported="false"/>
         <activity
             android:name=".listaHoteles"
             android:exported="false" />

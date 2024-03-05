@@ -3,21 +3,31 @@ package com.example.jardin_explorer.moldes;
 import java.io.Serializable;
 
 public class Sitio implements Serializable {
+    private Integer fotografia;
     private String nombre;
+    private String calificacion;
     private String descripcion;
     private String telefono;
-    private Integer fotografia;
     private Integer boton;
 
     public Sitio() {
     }
 
-    public Sitio(String nombre, String descripcion, String telefono, Integer fotografia, Integer boton) {
+    public Sitio(Integer fotografia, String nombre, String calificacion, String descripcion, String telefono, Integer boton) {
+        this.fotografia = fotografia;
         this.nombre = nombre;
+        this.calificacion = calificacion;
         this.descripcion = descripcion;
         this.telefono = telefono;
-        this.fotografia = fotografia;
         this.boton = boton;
+    }
+
+    public Integer getFotografia() {
+        return fotografia;
+    }
+
+    public void setFotografia(Integer fotografia) {
+        this.fotografia = fotografia;
     }
 
     public String getNombre() {
@@ -26,6 +36,14 @@ public class Sitio implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(String calificacion) {
+        this.calificacion = calificacion;
     }
 
     public String getDescripcion() {
@@ -42,14 +60,6 @@ public class Sitio implements Serializable {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    public Integer getFotografia() {
-        return fotografia;
-    }
-
-    public void setFotografia(Integer fotografia) {
-        this.fotografia = fotografia;
     }
 
     public Integer getBoton() {

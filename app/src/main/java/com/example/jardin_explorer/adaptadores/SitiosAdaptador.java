@@ -56,10 +56,10 @@ public class SitiosAdaptador extends RecyclerView.Adapter<SitiosAdaptador.viewHo
         public viewHolder(@NonNull View itemView) {
 
             super(itemView);
-            fotomoldesitio = itemView.findViewById(R.id.fotomoldehotel);
+            fotomoldesitio = itemView.findViewById(R.id.fotomoldesitio);
             nombresitiomolde = itemView.findViewById(R.id.nombresitiomolde);
             descripcionsitiomolde = itemView.findViewById(R.id.descripcionsitiomolde);
-            btnVerMas = itemView.findViewById(R.id.btnVerMas3);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas1);
         }
 
         public void pintarMolde(Sitio sitio) {
@@ -68,11 +68,12 @@ public class SitiosAdaptador extends RecyclerView.Adapter<SitiosAdaptador.viewHo
             descripcionsitiomolde.setText(sitio.getDescripcion());
             btnVerMas.setBottom(sitio.getBoton());
 
-            btnVerMas.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(btnVerMas.getContext(), SitiosAmpliados.class);
-                    btnVerMas.getContext().startActivity(intent);
+                    Intent intent = new Intent(itemView.getContext(), SitiosAmpliados.class);
+                    intent.putExtra("datossitio",sitio);
+                    itemView.getContext().startActivity(intent);
                 }
             });
         }

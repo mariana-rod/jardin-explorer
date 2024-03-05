@@ -3,23 +3,31 @@ package com.example.jardin_explorer.moldes;
 import java.io.Serializable;
 
 public class Restaurante implements Serializable {
+    private Integer fotografia;
     private String nombre;
+    private String calificacion;
     private String descripcion;
     private String direccion;
-    private String calificacion;
-    private Integer fotografia;
     private Integer boton;
 
     public Restaurante() {
     }
 
-    public Restaurante(String nombre, String descripcion, String direccion, String calificacion, Integer fotografia, Integer boton) {
+    public Restaurante(Integer fotografia, String nombre, String calificacion, String descripcion, String direccion, Integer boton) {
+        this.fotografia = fotografia;
         this.nombre = nombre;
+        this.calificacion = calificacion;
         this.descripcion = descripcion;
         this.direccion = direccion;
-        this.calificacion = calificacion;
-        this.fotografia = fotografia;
         this.boton = boton;
+    }
+
+    public Integer getFotografia() {
+        return fotografia;
+    }
+
+    public void setFotografia(Integer fotografia) {
+        this.fotografia = fotografia;
     }
 
     public String getNombre() {
@@ -28,6 +36,14 @@ public class Restaurante implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(String calificacion) {
+        this.calificacion = calificacion;
     }
 
     public String getDescripcion() {
@@ -44,22 +60,6 @@ public class Restaurante implements Serializable {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public String getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(String calificacion) {
-        this.calificacion = calificacion;
-    }
-
-    public Integer getFotografia() {
-        return fotografia;
-    }
-
-    public void setFotografia(Integer fotografia) {
-        this.fotografia = fotografia;
     }
 
     public Integer getBoton() {

@@ -56,7 +56,7 @@ public class RestauranteAdaptador extends RecyclerView.Adapter<RestauranteAdapta
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotomolderestaurante = itemView.findViewById(R.id.fotomoldehotel);
+            fotomolderestaurante = itemView.findViewById(R.id.fotomolderestaurante);
             nombrerestaurantemolde = itemView.findViewById(R.id.nombrerestaurantemolde);
             calificacionrestaurantemolde = itemView.findViewById(R.id.calificacionrestaurantemolde);
             descripcionrestaurantemolde = itemView.findViewById(R.id.descripcionrestaurantemolde);
@@ -70,12 +70,12 @@ public class RestauranteAdaptador extends RecyclerView.Adapter<RestauranteAdapta
             descripcionrestaurantemolde.setText(restaurante.getDescripcion());
             btnVerMas.setBottom(restaurante.getBoton());
 
-            btnVerMas.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(btnVerMas.getContext(), RestaurantesAmpliados.class);
+                    Intent intent = new Intent(itemView.getContext(), RestaurantesAmpliados.class);
                     intent.putExtra("datosrestaurante", restaurante);
-                    btnVerMas.getContext().startActivity(intent);
+                    itemView.getContext().startActivity(intent);
                 }
             });
         }
