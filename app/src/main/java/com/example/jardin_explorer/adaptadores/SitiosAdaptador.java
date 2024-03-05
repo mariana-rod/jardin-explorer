@@ -1,6 +1,7 @@
 package com.example.jardin_explorer.adaptadores;
 
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jardin_explorer.R;
+import com.example.jardin_explorer.RestaurantesAmpliados;
+import com.example.jardin_explorer.SitiosAmpliados;
 import com.example.jardin_explorer.moldes.Sitio;
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -64,6 +67,14 @@ public class SitiosAdaptador extends RecyclerView.Adapter<SitiosAdaptador.viewHo
             nombresitiomolde.setText(sitio.getNombre());
             descripcionsitiomolde.setText(sitio.getDescripcion());
             btnVerMas.setBottom(sitio.getBoton());
+
+            btnVerMas.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(btnVerMas.getContext(), SitiosAmpliados.class);
+                    btnVerMas.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

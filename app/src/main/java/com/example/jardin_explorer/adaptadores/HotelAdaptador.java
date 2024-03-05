@@ -1,5 +1,6 @@
 package com.example.jardin_explorer.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.jardin_explorer.HotelesAmpliados;
 import com.example.jardin_explorer.R;
+import com.example.jardin_explorer.RestaurantesAmpliados;
 import com.example.jardin_explorer.moldes.Hotel;
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -68,7 +71,7 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
             nombrehotelmolde = itemView.findViewById(R.id.nombrehotelmolde);
             calificacionhotelmolde = itemView.findViewById(R.id.calificacionhotelmolde);
             preciohotelmolde = itemView.findViewById(R.id.preciohotelmolde);
-            btnVerMas = itemView.findViewById(R.id.btnVerMas1);
+            btnVerMas = itemView.findViewById(R.id.btnVerMas3);
         }
 
         public void pintarMolde(Hotel hotel) {
@@ -77,6 +80,17 @@ public class HotelAdaptador extends RecyclerView.Adapter<HotelAdaptador.viewHold
             calificacionhotelmolde.setText(hotel.getCalificacion());
             preciohotelmolde.setText(hotel.getPrecio());
             btnVerMas.setBottom(hotel.getBoton());
+
+            //escuchar click en cada uno de los elementos de la lista
+
+            btnVerMas.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(btnVerMas.getContext(), HotelesAmpliados.class);
+                    intent.putExtra("datoshotel", hotel);
+                    btnVerMas.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

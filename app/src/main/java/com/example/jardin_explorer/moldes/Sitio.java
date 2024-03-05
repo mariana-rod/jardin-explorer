@@ -1,6 +1,8 @@
 package com.example.jardin_explorer.moldes;
 
-public class Sitio {
+import java.io.Serializable;
+
+public class Sitio implements Serializable {
     private String nombre;
     private String descripcion;
     private String telefono;

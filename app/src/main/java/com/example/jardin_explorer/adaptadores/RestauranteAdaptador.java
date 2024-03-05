@@ -1,5 +1,6 @@
 package com.example.jardin_explorer.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,9 +8,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jardin_explorer.R;
+import com.example.jardin_explorer.RestaurantesAmpliados;
 import com.example.jardin_explorer.moldes.Restaurante;
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -66,6 +69,15 @@ public class RestauranteAdaptador extends RecyclerView.Adapter<RestauranteAdapta
             calificacionrestaurantemolde.setText(restaurante.getCalificacion());
             descripcionrestaurantemolde.setText(restaurante.getDescripcion());
             btnVerMas.setBottom(restaurante.getBoton());
+
+            btnVerMas.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(btnVerMas.getContext(), RestaurantesAmpliados.class);
+                    intent.putExtra("datosrestaurante", restaurante);
+                    btnVerMas.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }
