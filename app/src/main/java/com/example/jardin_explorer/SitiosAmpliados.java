@@ -10,11 +10,12 @@ import android.widget.Toast;
 
 import com.example.jardin_explorer.moldes.Hotel;
 import com.example.jardin_explorer.moldes.Sitio;
+import com.google.android.material.imageview.ShapeableImageView;
 
 public class SitiosAmpliados extends AppCompatActivity {
 
     Sitio datossitio;
-    ImageView fotoSitio;
+    ShapeableImageView fotoSitio;
     TextView nombreSitio;
     TextView calificacionSitio;
     TextView descripcionSitio;
@@ -26,14 +27,15 @@ public class SitiosAmpliados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sitios_ampliados);
 
-        fotoSitio.findViewById(R.id.fotositioampliado);
-        nombreSitio.findViewById(R.id.nombresitioampliado);
-        calificacionSitio.findViewById(R.id.calificacionsitioampliado);
-        descripcionSitio.findViewById(R.id.descripcionsitioampliado);
-        numeroSitio.findViewById(R.id.numerositioampliado);
-        botonSitio.findViewById(R.id.btnVerMas1);
+        fotoSitio=findViewById(R.id.fotositioampliado);
+        nombreSitio=findViewById(R.id.nombresitioampliado);
+        calificacionSitio=findViewById(R.id.calificacionsitioampliado);
+        descripcionSitio=findViewById(R.id.descripcionsitioampliado);
+        numeroSitio=findViewById(R.id.numerositioampliado);
+        botonSitio=findViewById(R.id.btnVerMas1);
 
         datossitio=(Sitio)getIntent().getSerializableExtra("datossitio");
+        //Toast.makeText(this, datossitio.getNombre(), Toast.LENGTH_SHORT).show();
 
         fotoSitio.setImageResource(datossitio.getFotografia());
         nombreSitio.setText(datossitio.getNombre());
