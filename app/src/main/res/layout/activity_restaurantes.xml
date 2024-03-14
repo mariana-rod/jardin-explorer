@@ -9,19 +9,19 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="107dp"
-        android:layout_height="36dp"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
         android:layout_marginStart="48dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/loguito"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/explorar"
+        android:id="@+id/restaurantes"
         android:layout_width="289dp"
         android:layout_height="178dp"
         android:src="@drawable/restaurantes"
@@ -34,17 +34,29 @@
         app:shapeAppearanceOverlay="@style/biggerradius"/>
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/explorar2"
+        android:id="@+id/restaurantes2"
         android:layout_width="361dp"
         android:layout_height="218dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/restaurantes2"
+        android:src="@drawable/cazuela"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.193"
         app:shapeAppearanceOverlay="@style/biggerradius" />
+
+    <TextView
+        android:id="@+id/textoRestaurantes"
+        android:layout_width="325dp"
+        android:layout_height="106dp"
+        android:text="¡Bienvenidos a Carmen Explorer!\nExplora la deliciosa oferta gastronómica de El Carmen de Viboral a través de nuestra app. Descubre los mejores restaurantes locales y sumérgete en una experiencia culinaria única. ¡Buen provecho! 🍴✨"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantes2"
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
         android:id="@+id/btnVerRestaurantes"
@@ -56,9 +68,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/explorar2"
-        app:layout_constraintVertical_bias="0.076" />
-
+        app:layout_constraintTop_toBottomOf="@id/textoRestaurantes"
+        app:layout_constraintVertical_bias="0.086" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

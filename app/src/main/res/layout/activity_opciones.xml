@@ -25,26 +25,27 @@
         android:layout_width="360dp"
         android:layout_height="228dp"
         android:layout_marginEnd="24dp"
-        android:src="@drawable/jardin"
+        android:src="@drawable/explore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tituloOpc"
-        app:layout_constraintVertical_bias="0.066"
+        app:layout_constraintVertical_bias="0.067"
         app:shapeAppearanceOverlay="@style/radius" />
 
     <TextView
         android:id="@+id/texto"
         android:layout_width="346dp"
         android:layout_height="114dp"
-        android:text="¡Bienvenido a Jardín Explorer! 🗺️ Descubre los secretos mejor guardados de Jardín, Antioquia, con nuestra app. Aquí podrás descubrir los planes más fascinantes, conocer restaurantes con sabores auténticos y encontrar el lugar perfecto para descansar. ¡Deja que la aventura comience! 🌄"
+        android:text="¡Bienvenido a Carmen Explorer! 🗺️ Descubre los secretos mejor guardados de El Carmen de Viboral, Antioquia, con nuestra app. Aquí podrás descubrir los planes más fascinantes, conocer restaurantes con sabores auténticos y encontrar el lugar perfecto para descansar. ¡Deja que la aventura comience! 🌄"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagenOpc"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <Button
         android:id="@+id/btnExplorar"
